@@ -141,7 +141,9 @@ const getAllUser = async (req, res) => {
   }
 
   try {
-    const condition = {};
+    const condition = {
+      
+    };
     const allUser = await User.find(condition);
     res.status(200).send({
       data: allUser,
